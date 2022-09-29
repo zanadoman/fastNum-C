@@ -10,7 +10,7 @@ double fastNum(char value[])
         if(47 < (int)value[i] && (int)value[i] < 58) //Abusing ascii table.
         {
             powskip /= 10; //Multiplier handling.
-            result += ((int)value[i] - 48)*powskip; //Giving real value to the char digit in decimal numbersystem.
+            result += ((int)value[i] - 48) * powskip; //Giving real value to the char digit in decimal numbersystem.
         }
         else
             if((int)value[i] == 46) floatingpoint = powskip; //Setting floating divisor if exist.
